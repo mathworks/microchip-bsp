@@ -1,5 +1,5 @@
 # MathWorks Microchip Repository
-MathWorks yocto build repository for generating SoC SD card images.
+MathWorks yocto build repository for generating SD card images for Microchip Platforms.
 
 
 #### Current Supported Boards
@@ -20,9 +20,10 @@ MathWorks yocto build repository for generating SoC SD card images.
 
 - Update the repo workspace 
  
+ ```bash
 `$ repo sync` 
 `$ repo rebase` 
-   
+```   
   
 - Setup Bitbake environment
 
@@ -35,3 +36,6 @@ MathWorks yocto build repository for generating SoC SD card images.
 - After the build has succeeded, core-image-minimal-dev-icicle-kit-es.wic image will be available in mw_icicle_kit/build/tmp-glibc/deploy/images/icicle-kit-es
 	
 - Flash your SD card with the wic file using Win32DiskImager software and boot the evaluation board
+
+#### Use Microchip Linux image
+The generated core-image-minimal-dev Linux image will be used to boot the Microchip PolarFire SoC Icicle Kit, allowing you to work on various applications.
