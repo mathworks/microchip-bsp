@@ -20,10 +20,9 @@ MathWorks yocto build repository for generating SD card images for Microchip Pla
 
 - Update the repo workspace 
  
- ```bash
 `$ repo sync` 
 `$ repo rebase` 
-```   
+   
   
 - Setup Bitbake environment
 
