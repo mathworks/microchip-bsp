@@ -18,6 +18,10 @@ MathWorks yocto build repository for generating SD card images for Microchip Pla
 
 `$ cd mw_icicle_kit`
 
+- Initialize the repo
+
+`$ repo init -u https://github.com/polarfire-soc/polarfire-soc-yocto-manifests.git -b 2024.02.1 -m default.xml`
+  
 - Update the repo workspace 
  
 `$ repo sync` 
